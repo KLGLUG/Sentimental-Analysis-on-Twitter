@@ -13,11 +13,19 @@ products.
 
 * **Public Actions:** Sentiment analysis also is used to monitor and analyse social phenomena, for the spotting of potentially dangerous situations and determining the general mood of the blogosphere.
 
-### PRE-REQUISITIES:
+### Requirements :
+* tweepy
+* textblob
+* nltk
+
+
+### Instructions :
 ```sh
-$ pip3 install tweepy
-$ pip3 install textblob
-$ pip3 install nltk
+# Install dependencies
+$ pip3 install -r requirements.txt
+# Run the app
+$ python3 senti_twitter.py
+
 ```
 
 Now in Python3 Terminal 
