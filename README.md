@@ -23,12 +23,10 @@ products.
 ```sh
 # Install dependencies
 $ pip3 install -r requirements.txt
+# Download Stopwords and punkt
+$ pyhton3 downSP.py
 # Run the app
 $ python3 senti_twitter.py
 
 ```
 
-Now in Python3 Terminal 
-*   import nltk
-*   nltk.download(“stopwords”)
-*   nltk.download(“punkt”)
