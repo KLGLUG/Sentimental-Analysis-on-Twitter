@@ -6,10 +6,10 @@ import time
 from urllib.parse import unquote
 
 query = input("Hashtag:")
-consumer_key = 'A0PIowPC2WDf965TSlw5THleS'
-consumer_secret = 'bECpVLYsu3aINGRSqPFkyD2xE387I5Yw6XayabXVntFEvNV4Lr'
-access_token = '2348573101-ltHO8PVdOH9TOecf6F448w9D0jSn3riaf4Xdpgu'
-access_token_secret = 'y1eGbgZwgxT8hmvqjiVymMDBVHjeWp0SK4ghYE671he3D'
+consumer_key = 'XXXXXXXXXXXXXXXXXXXXX'
+consumer_secret = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
+access_token = 'XXXXXXXXX-XXXXXXXXXXXXXXXXXXXX'
+access_token_secret = 'XXXXXXXXXXXXXXXXXXXXXXXXXXX'
 
 
 
