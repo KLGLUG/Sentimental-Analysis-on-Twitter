@@ -1,4 +1,4 @@
-;;; Sentiment Analysis on Twitter using Machine learnig
+;;; Multi_class Sentiment Analysis on Twitter using Machine learning model
 ;;; Copyright © 2018 Uday Kiran Kondreddy <udaykiran.kondreddy@gmail.com>
 ;;; Copyright © 2018 Farhaan Ahmed Shaik <farhaanfsk@gmail.com>
 ;;; Copyright © 2018 Subhani Kurra <subhanikurra4@gmail.com>
