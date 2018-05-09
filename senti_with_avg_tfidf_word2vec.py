@@ -1,3 +1,4 @@
+'''
 ;;; Multi_class Sentiment Analysis on Twitter using Machine learning model
 ;;; Copyright © 2018 Uday Kiran Kondreddy <udaykiran.kondreddy@gmail.com>
 ;;; Copyright © 2018 Farhaan Ahmed Shaik <farhaanfsk@gmail.com>
@@ -16,7 +17,7 @@
 ;;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 ;;; GNU General Public License for more details.
 ;;;
-;;; See <http://www.gnu.org/licenses/>.
+;;; See <http://www.gnu.org/licenses/>.'''
 
 # Importing the libraries
 import numpy as np
@@ -24,7 +25,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 # Importing the dataset
-dataset = pd.read_csv('tweets@5k2.csv')
+dataset = pd.read_csv('tweets@3k.csv')
 dataset.fillna(0, inplace=True)
 # Cleaning the texts
 import re
@@ -36,7 +37,7 @@ import pickle
 from sklearn.metrics import pairwise_distances  
 from sklearn.metrics.pairwise import cosine_similarity
 corpus = []
-for i in range(0, 7002):
+for i in range(0, 3000):
     review = re.sub('@[\w\d]*','',dataset['Tweet'][i])
     if "#" in review:
         review = list(review)
@@ -134,7 +135,7 @@ for i in range(len(X_test)):
     y4_pred.append(y4_train[indices])
     predicted_values.append([y_train[indices],y1_train[indices],y2_train[indices],y3_train[indices],y4_train[indices]])
 
-k=list(dataset["Tweet"][len(X_train):7002])
+k=list(dataset["Tweet"][len(X_train):3000])
 l5=[]
 for i in range(len(predicted_values)):
     l5.append((k[i],predicted_values[i]))
@@ -156,11 +157,11 @@ print(cm1)
 print(cm2)
 print(cm3)
 print(cm4)
-p=((cm[0][0]+cm[1][1])/1400)
-p1=((cm1[0][0]+cm1[1][1])/1400)
-p2=((cm2[0][0]+cm2[1][1])/1400)
-p3=((cm3[0][0]+cm3[1][1])/1400)
-p4=((cm4[0][0]+cm4[1][1])/1400)
+p=((cm[0][0]+cm[1][1])/600)
+p1=((cm1[0][0]+cm1[1][1])/600)
+p2=((cm2[0][0]+cm2[1][1])/600)
+p3=((cm3[0][0]+cm3[1][1])/600)
+p4=((cm4[0][0]+cm4[1][1])/600)
 print("\n")
 print("Positive = {:.2f} %".format(p*100))
 print("Negative = {:.2f} %".format(p1*100))
