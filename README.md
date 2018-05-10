@@ -13,18 +13,17 @@ products.
 
 * **Public Actions:** Sentiment analysis also is used to monitor and analyse social phenomena, for the spotting of potentially dangerous situations and determining the general mood of the blogosphere.
 
-### Requirements :
-* tweepy
-* textblob
-* nltk
+
 
 
 ### Instructions :
 ```sh
 # Install dependencies
 $ pip3 install -r requirements.txt
-# Run the app
-$ python3 senti_twitter.py
+# To run the Word2vec 
+$ python3 senti_with_avg_word2vec.py
+# To run TF-IDF word2vec
+$ python3 senti_with_avg_tfidf_word2vec.py
 
 ```
 
@@ -32,3 +31,4 @@ Now in Python3 Terminal
 *   import nltk
 *   nltk.download(“stopwords”)
 *   nltk.download(“punkt”)
+*   nltk.corpus()
