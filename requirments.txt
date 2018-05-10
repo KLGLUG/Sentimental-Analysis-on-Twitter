@@ -1,0 +1,4 @@
+sklean==0.0
+numpy==1.14.0
+pandas==0.22.0
+nltk==3.2.5
