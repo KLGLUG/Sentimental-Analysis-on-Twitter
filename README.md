@@ -32,3 +32,6 @@ Now in Python3 Terminal
 *   nltk.download(“stopwords”)
 *   nltk.download(“punkt”)
 *   nltk.corpus()
+
+IF you are intrested to download tweets on particular hashtag (#) 
+https://github.com/KLGLUG/Tweet-Crawler
